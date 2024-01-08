@@ -41,4 +41,19 @@ public class Project {
     }
 
     // Getters and setters, constructors, other methods
+    public String getProjectName() {
+        return projectName;
+    }
+
+    public Boolean getIsActive() {
+        return isActive;
+    }
+
+    public Task getTask() {
+        return task;
+    }
+
+    public Set<Employee> getEmployees() {
+        return employees;
+    }
 }
