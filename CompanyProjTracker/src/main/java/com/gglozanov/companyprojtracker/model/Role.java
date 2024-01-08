@@ -19,4 +19,5 @@ public class Role {
     private Set<EmployeeRole> employeeRoles = new HashSet<>();
 
     // Getters and setters, constructors, other methods
+
 }

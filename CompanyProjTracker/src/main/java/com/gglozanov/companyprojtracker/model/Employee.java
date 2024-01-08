@@ -35,4 +35,8 @@ public class Employee {
     public String getName() {
         return name;
     }
+
+    public Set<Project> getProjects() {
+        return projects;
+    }
 }
