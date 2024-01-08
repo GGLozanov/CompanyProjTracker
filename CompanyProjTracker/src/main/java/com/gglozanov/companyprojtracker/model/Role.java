@@ -20,4 +20,12 @@ public class Role {
 
     // Getters and setters, constructors, other methods
 
+
+    public String getRoleName() {
+        return roleName;
+    }
+
+    public Set<EmployeeRole> getEmployeeRoles() {
+        return employeeRoles;
+    }
 }
