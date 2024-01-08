@@ -19,4 +19,12 @@ public class Task {
     private Set<Project> projects = new HashSet<>();
 
     // Getters and setters, constructors, other methods
+
+
+    public String getTaskName() {
+        return taskName;
+    }
+    public Set<Project> getProjects() {
+        return projects;
+    }
 }
