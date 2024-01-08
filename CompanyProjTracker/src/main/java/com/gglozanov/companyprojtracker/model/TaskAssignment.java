@@ -1,10 +1,10 @@
-package com.gglozanov.model;
+package com.gglozanov.companyprojtracker.model;
 
 import jakarta.persistence.*;
 
 @Entity
-@Table(name = "employee_project")
-public class EmployeeProject {
+@Table(name = "task_assignment")
+public class TaskAssignment {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -15,8 +15,8 @@ public class EmployeeProject {
     private Employee employee;
 
     @ManyToOne
-    @JoinColumn(name = "project_id")
-    private Project project;
+    @JoinColumn(name = "task_id")
+    private Task task;
 
     // Getters and setters, constructors, other methods
 }

@@ -1,4 +1,4 @@
-package com.gglozanov.model;
+package com.gglozanov.companyprojtracker.model;
 
 import jakarta.persistence.*;
 
@@ -23,6 +23,22 @@ public class Project {
     @ManyToOne
     @JoinColumn(name = "task_id")
     private Task task;
+
+    public Project() {
+      this(0L, "asd", true, new HashSet<>());
+    }
+
+    public Project(Long id, String projectName, boolean isActive, Set<Employee> employees) {
+        this.id = id;
+        this.projectName = projectName;
+        this.isActive = isActive;
+        this.employees = employees;
+    }
+
+    @Override
+    public String toString() {
+        return "(Project name: " + projectName + "; is Active: " + isActive + ")";
+    }
 
     // Getters and setters, constructors, other methods
 }
