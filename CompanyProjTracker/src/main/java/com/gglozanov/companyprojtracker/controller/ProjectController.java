@@ -25,6 +25,7 @@ public class ProjectController {
 
     @GetMapping("/active_projects")
     public String getAllActiveProjects() {
-        return "";
+        Iterable<Project> projects = projectRepository.findActiveProjects();
+        return projects.toString();
     }
 }
