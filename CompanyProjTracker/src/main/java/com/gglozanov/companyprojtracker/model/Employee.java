@@ -31,4 +31,8 @@ public class Employee {
     }
 
     // Getters and setters, constructors, other methods
+
+    public String getName() {
+        return name;
+    }
 }
