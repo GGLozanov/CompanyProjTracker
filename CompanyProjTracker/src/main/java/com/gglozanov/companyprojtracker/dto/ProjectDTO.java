@@ -1,3 +1,5 @@
+package com.gglozanov.companyprojtracker.dto;
+
 public class ProjectDTO {
 
     private Long id;
